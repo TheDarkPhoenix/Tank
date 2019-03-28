@@ -14886,25 +14886,25 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND5" library="supply1" deviceset="GND" device="" value="GNDS"/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" deviceset="GND" device="" value="GNDS"/>
-<part name="GND12" library="supply1" deviceset="GND" device="" value="GNDS"/>
-<part name="GND13" library="supply1" deviceset="GND" device="" value="GNDS"/>
-<part name="GND14" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND15" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND16" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND17" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND18" library="supply1" deviceset="GND" device="" value="GNDEL"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="GND21" library="supply1" deviceset="GND" device="" value="GNDEL"/>
-<part name="GND22" library="supply1" deviceset="GND" device="" value="GNDEL"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
@@ -14921,7 +14921,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="LV" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="HV" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
-<part name="GND23" library="supply1" deviceset="GND" device="" value="GNDEL"/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="LED2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
@@ -15116,6 +15116,18 @@ P-S Przetwornica Serwa</text>
 <wire x1="-66.04" y1="132.08" x2="-55.88" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-35.56" y1="129.54" x2="-35.56" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="P-EL-OUT" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="132.08" x2="-45.72" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-35.56" y1="106.68" x2="-35.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="P-S-OUT" gate="G$1" pin="2"/>
+</segment>
+<segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="96.52" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
@@ -15130,6 +15142,63 @@ P-S Przetwornica Serwa</text>
 <wire x1="-91.44" y1="-7.62" x2="-91.44" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-91.44" y1="-5.08" x2="-83.82" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND@1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="-60.96" y1="48.26" x2="-63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="48.26" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="35.56" x2="-73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="33.02" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-63.5" y="33.02"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="-60.96" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="-83.82" y1="73.66" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-104.14" y1="60.96" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="55.88" x2="-88.9" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-83.82" y="55.88"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-88.9" y1="55.88" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="58.42" x2="-88.9" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-88.9" y="55.88"/>
+</segment>
+<segment>
+<pinref part="RASPBERRY" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="-10.16" x2="99.06" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="99.06" y1="-10.16" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERWO3" gate="A" pin="3"/>
+<wire x1="30.48" y1="-17.78" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="40.64" y1="-17.78" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERWO1" gate="A" pin="3"/>
+<wire x1="30.48" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="40.64" y1="33.02" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERWO2" gate="A" pin="3"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="30.48" y1="7.62" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ENKODER1" gate="A" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="22.86" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ENKODER2" gate="A" pin="2"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="66.04" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -15156,6 +15225,21 @@ P-S Przetwornica Serwa</text>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="63.5" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
 <junction x="63.5" y="127"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-10.16" y1="-12.7" x2="-2.54" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="-10.16" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="HV" gate="A" pin="4"/>
+<wire x1="132.08" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -15579,94 +15663,6 @@ P-S Przetwornica Serwa</text>
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="-12.7" y1="43.18" x2="-5.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="-12.7" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GNDS" class="0">
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="-35.56" y1="106.68" x2="-35.56" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="P-S-OUT" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="SERWO1" gate="A" pin="3"/>
-<wire x1="30.48" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="40.64" y1="33.02" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SERWO2" gate="A" pin="3"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="30.48" y1="7.62" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SERWO3" gate="A" pin="3"/>
-<wire x1="30.48" y1="-17.78" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="40.64" y1="-17.78" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GNDEL" class="0">
-<segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-35.56" y1="129.54" x2="-35.56" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P-EL-OUT" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="132.08" x2="-45.72" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ENKODER2" gate="A" pin="2"/>
-<pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="66.04" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ENKODER1" gate="A" pin="2"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="22.86" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="RASPBERRY" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="-10.16" x2="99.06" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="99.06" y1="-10.16" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HV" gate="A" pin="4"/>
-<wire x1="132.08" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="GND23" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="-12.7" x2="-2.54" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
-<pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="-60.96" y1="48.26" x2="-63.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="48.26" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="35.56" x2="-73.66" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="33.02" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-63.5" y="33.02"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="-60.96" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="-83.82" y1="73.66" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-104.14" y1="60.96" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="55.88" x2="-88.9" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-83.82" y="55.88"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-88.9" y1="55.88" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="58.42" x2="-88.9" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-88.9" y="55.88"/>
 </segment>
 </net>
 </nets>
